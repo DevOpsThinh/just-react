@@ -1,9 +1,19 @@
+/**
+ * Topic: Learning React
+ * Student name: Nguyen Truong Thinh
+ * Created At: 10/ 7/ 2021
+ * Section: Web client with React
+*/
 import React from 'react';
 
 /// Import GraphQL Dependencies
 import { useQuery, gql } from '@apollo/client';
 
 import Note from '../components/Note';
+
+///----------------------------------------------------------------------///
+///                            Query an API                             ///
+///--------------------------------------------------------------------///
 
 /**
  * The Note query, which accepts an ID variable
@@ -23,6 +33,11 @@ const GET_NOTE = gql`
     }
   }
 `;
+
+///----------------------------------------------------------------------///
+///                         Component function                          ///
+///--------------------------------------------------------------------///
+
 const NotePage = (props) => {
   // Store the id found in the url as a variable
   const id = props.match.params.id;

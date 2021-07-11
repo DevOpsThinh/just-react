@@ -1,8 +1,18 @@
+/**
+ * Topic: Learning React
+ * Student name: Nguyen Truong Thinh
+ * Created At: 9/ 7 / 2021
+ * Updated At: 10/ 7/ 2021: Uses Styled Component
+ * Section: Web client with React
+ */
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import { format } from 'date-fns';
 import styled from 'styled-components';
 
+///-----------------------------------------------------------///
+///                     Component styles                     ///
+///---------------------------------------------------------///
 /**
  * Keep notes from extending wider than 800px
  * */
@@ -34,6 +44,9 @@ const UserActions = styled.div`
   margin-left: auto;
 `;
 
+///-----------------------------------------------------------///
+///                     Component function                   ///
+///---------------------------------------------------------///
 const Note = ({ note }) => {
   return (
     <StyledNote>

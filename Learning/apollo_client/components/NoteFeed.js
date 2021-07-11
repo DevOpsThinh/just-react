@@ -1,9 +1,18 @@
+/**
+ * Topic: Learning React
+ * Student name: Nguyen Truong Thinh
+ * Created At: 10/ 7/ 2021
+ * Section: Web client with React
+*/
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 import Note from './Note';
 
+///-----------------------------------------------------------///
+///                     Component styles                     ///
+///---------------------------------------------------------///
 const NoteWrapper = styled.div`
     max-width: 800px;
     margin: 0 auto;
@@ -12,6 +21,9 @@ const NoteWrapper = styled.div`
     border-bottom: 1px solid #f5f4f0;
 `;
 
+///-----------------------------------------------------------///
+///                     Component function                   ///
+///---------------------------------------------------------///
 const NoteFeed = ({ notes }) => {
   return (
     <div>

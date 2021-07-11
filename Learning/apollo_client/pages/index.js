@@ -2,6 +2,7 @@
  * Topic: Learning React
  * Student name: Nguyen Truong Thinh
  * Created At: 9/ 7 / 2021
+ * Updated At: 10/ 7/ 2021: Add an note router
  * Section: Web client with React
  */
 import React from 'react';

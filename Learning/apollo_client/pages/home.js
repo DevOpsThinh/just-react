@@ -11,6 +11,10 @@ import { useQuery, gql } from '@apollo/client';
 import Button from '../components/Button';
 import NoteFeed from '../components/NoteFeed';
 
+///----------------------------------------------------------------------///
+///                            Query an API                             ///
+///--------------------------------------------------------------------///
+
 // Our GraphQL query, stored as a variable
 const GET_NOTES = gql`
   query NoteFeed($cursor: String) {
@@ -31,6 +35,10 @@ const GET_NOTES = gql`
     }
   }
 `;
+
+///----------------------------------------------------------------------///
+///                         Component function                          ///
+///--------------------------------------------------------------------///
 
 const Home = () => {
   // Query hook
